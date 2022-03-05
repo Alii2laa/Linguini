@@ -1,0 +1,1556 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+/*------ Primary Styles-------*/
+body{
+	font-family: 'Changa', sans-serif , 'Arial', 'Anaheim';
+}
+.title{
+    text-align: center;
+}
+.title h3{
+	color: #393E46;
+	font-size: 25px;
+	text-align: center;
+    border-radius: 5px;
+	position: relative;
+	margin-bottom: 30px;
+    padding: 0 0 5px 5px;
+    display: inline-block;
+    border-left: 1.5px solid #393e46;
+    border-bottom: 1.5px solid #393e46;
+}
+.seemore{
+    margin-top: 10px;
+}
+.seemore a{
+    color: #fff;
+    padding: 5px 10px;
+    font-family: 'Anaheim';
+    background: #284184;
+    text-decoration: none;
+}
+p{
+	
+	line-height:30px;
+	margin:0;
+}
+a,span,p,h1,h2,h3,h4,input,button,textarea{
+	font-family: 'Raleway','Changa', sans-serif , 'Arial','Anaheim';
+}
+hr{
+    height: 2px;
+    background-color: #f1f1f1;
+}
+.dropDown .dropHover i{
+    margin-left: 4px;
+    transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.dropDown .dropContent{
+    z-index: 1;
+    width: 175px;
+    display: none;
+    position: absolute;
+}
+.dropDown .dropContent li{
+    margin: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    
+}
+.dropDown .dropContent li a{
+    color: #444444!important;
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-family: 'Anaheim';
+    
+}
+.dropDown .dropContent li a:hover{
+    color: #FFF!important;
+    background: #00adb5;
+}
+.dropDown:hover .dropContent{
+    display: block;
+    
+}
+.dropDown:hover .dropHover i{
+    transform: rotate(180deg);
+}
+.dropDown:hover .dropContent li{
+    animation: ani-anchor .5s both;
+}
+@keyframes ani-anchor{
+    0%{
+        opacity: 0;
+        transform: translateX(500px) rotate(180deg)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px) rotate(0deg)
+    }
+}
+.dropDown .dropContent li:nth-child(1){
+    animation-delay: 0s;
+}
+.dropDown .dropContent li:nth-child(2){
+    animation-delay: .2s;
+}
+.dropDown .dropContent li:nth-child(3){
+    animation-delay: .4s;
+}
+.dropDown .dropContent li:nth-child(4){
+    animation-delay: .6s;
+}
+.dropDown .dropContent li:nth-child(5){
+    animation-delay: .8s;
+}
+.dropDown .dropContent li:nth-child(6){
+    animation-delay: 1s;
+}   
+.dropDown .dropContent li:nth-child(7){
+    animation-delay: 1.2s;
+}
+@media (max-width: 991.9px){
+    .dropDown .dropContent{
+        position: static;
+        margin-left: 30px;
+    }
+}
+/*Start Style Index Page*/
+/*-Start Style header-*/
+.navbar .navbar-brand{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Changa';
+}
+nav ul{
+	list-style-type: none;
+}
+nav ul li{
+    margin: 0 3px;
+}
+nav button:focus{
+    outline: 0;
+}
+.navbar .navbar-nav .nav-link{
+    margin: 0px;
+	color: #fff;
+	padding: 8px;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #00adb5!important;
+    transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.navbar .navbar-nav .nav-link:focus{
+    color: #fff;
+}
+
+@media (min-width:992px) and (max-width:1199.9px){
+    nav ul li{
+        margin: 0 2px;
+    }
+    .navbar .navbar-nav .nav-link{
+        font-size: 16px;
+        padding: 8px 5px;
+    }
+}
+.navbar-light .navbar-toggler{
+    background-color: #fff;
+}
+.background{
+    color: #444444;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #00adb5;
+}
+@media (max-width:991.9px){
+    nav:first{
+        background-color: #f9b248;
+    }
+}
+.common{
+    z-index: 1;
+	min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;    
+}
+.header{
+   background-image: url(../img/BG2.jpg); 
+}
+.common:after{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    background-color: rgb(0,0,0,.7);
+}
+.header .content-head{
+    margin-top: 15%;
+    text-align: center;
+}
+.header .content-head p{
+    color: #fff;
+    line-height: 2;
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+@media (min-width:992px) and (max-width:1199.9px){
+    .header .content-head{
+        margin-top: 18%;
+    }
+}
+@media (min-width:768px) and (max-width:991.9px){
+    .header .content-head{
+        margin-top: 24%;
+        text-align: center;
+    }
+    .header .content-head p{
+        width: 100%;
+    }
+}
+@media (max-width:767.9px){
+    .header .content-head{
+        margin-top: 26%;
+        text-align: center;
+    }
+    .header .content-head p{
+        width: 100%;
+        text-align: center;
+    }
+    .header .arrow{
+        margin-top: 0!important;
+    }
+}
+.header .content-head .diff-col {
+	color: #00adb5;
+}
+.header .content-head button{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 10px 35px;
+    position: relative;
+    border: 1.2px solid #fff;
+    background: transparent;
+    transition: all .7s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.header .content-head button:first-of-type{
+    margin-right: 20px;
+}
+.header button{
+    color: #393E46;
+    text-decoration: none;
+}
+.header .content-head button:hover{
+	color: #00adb5;
+	cursor: pointer;
+	transform: scale(1.2);
+	background-color: #fff;
+}
+.header button:focus{
+    outline: 0;
+}
+.header .arrow{
+    width: 5%;
+    margin: 100px auto 0;
+    text-align: center;
+}
+.header .arrow a{
+    text-decoration: none;
+}
+.header .arrow a i{
+    color: #fff;
+    display: block;
+    font-size: 50px;
+    margin-top: 60px;
+    animation: ICON 1s ease-in-out -.1s infinite;
+}
+.header .arrow a i:last-of-type{
+    top: -30px;
+    margin-top: 0px;
+    position: relative;
+    animation-delay: -.2s;
+}
+.header .arrow i:hover{
+    cursor: pointer;
+}
+@keyframes ICON {
+    0%{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+ 
+}
+.header .owl-theme .owl-dots{
+    margin-top: 45px!important  ;
+}
+/*End Header*/
+
+
+/*Start Why Choose Our Services*/
+.choosing{
+    padding: 90px 0 30px;
+    background: #284184;
+}
+.choosing .titlee{
+    text-align: center;
+}
+.choosing .titlee h3{
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-family: 'Anaheim';
+}
+@media (max-width:767.9px){
+    .choosing .titlee h3{
+        font-size: 35px;
+    }
+}
+.choosing .advantage{
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.choosing .advantage i{
+    height: 80px;
+    color: #284184;
+    font-size: 35px;
+    background: #fff;
+    line-height: 80px;
+    text-align: center;
+}
+.choosing .advantage .adv-info h4{
+    font-family: 'Anaheim';
+}
+.choosing .advantage .adv-info p{
+    font-family: 'Anaheim';
+}
+
+@media (max-width:575.9px){
+    .choosing .row{
+        width: 100%;
+        margin: auto;
+    }
+    .col-xs-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+        -ms-flex: 0 0 75%;
+    }
+    .col-xs-2{
+        flex: 0 0 25%;
+        max-width: 25%;
+        -ms-flex: 0 0 25%;
+    }
+}
+/*End Why Choose Our Services*/
+
+
+/*Start statistics Style*/
+.statistics{
+    padding: 40px 0;
+}   
+.statistics .statistic{
+    margin-bottom: 30px;
+}
+.statistics .statistic .content-c{
+    padding: 60px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    box-shadow: 2px 2px 10px #ccc, -2px -2px 10px #ccc;
+}
+.statistics .statistic .content-c:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color: #00adb5;
+    box-shadow: 0px 0px 5px #ccc, 0px 0px 5px #ccc;
+}
+.statistics .statistic i{
+    color: #fff;
+    padding: 15px;
+    font-size: 50px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    background-color: #00adb5;
+    border: 1.2px solid #00adb5;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.statistics .statistic .content-c:hover i{
+    color: #00adb5;
+    border-color: #fff;
+    background-color: #fff;
+}
+.statistics .statistic span{
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Changa';
+}
+.statistics .num-of p{
+    font-size: 18px;
+    font-weight: 500;
+}
+/*End statistics Style*/
+/*Start Clients style*/
+.clients{
+    padding: 30px 0;
+}
+.clients .partners{
+    margin-bottom: 30px;
+}
+.clients .partners .partner{
+    display: flex;
+    height: 170px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    box-shadow: 2px 2px 10px #ccc, -2px -2px 10px #ccc;
+}
+.clients .partners .partner img{
+    width: 150px;
+}
+/*End Clients style*/
+
+
+
+/*Start Style News & blog*/
+.blogs{
+    padding: 30px 0;
+}
+.blogs .card{
+    border: 0;
+    margin-bottom: 30px;
+}
+.blogs .card img{
+    height: 235px;
+}
+.blogs .card-body{
+    font-family: 'Anaheim';
+    border: 1px solid rgba(0,0,0,.125);
+    
+}
+.blogs .card-body h5{
+    font-size: 25px;
+}
+.blogs .date{
+    top: -10px;
+    font-size: 14px;
+    position: relative;
+    font-family: 'Anaheim';
+}
+.blogs .card-body p{
+    margin-bottom: 10px;
+    font-family: 'Anaheim';
+}
+.blogs .card-body a{
+    color: #00adb5;
+    border: 1.2px solid;
+    font-family: 'Anaheim';
+    border-color: #00adb5!important;
+    background-color: #fff!important;
+}
+.blogs .card-body a:hover{
+    color: #fff;
+    background-color: #00adb5!important;
+}
+.blogs .card-body a:focus{
+    outline: none!important;
+}
+/*End Style News & blog*/
+
+
+
+/*Start Style Hosting*/
+.hosting{
+	overflow: hidden;
+	padding: 90px 0 30px;
+}
+.hosting .server{
+	height: auto;
+	position: relative;
+	text-align: center;
+    margin-bottom: 30px;
+}
+.hosting .server .recommend{
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 2px 5px;
+	position: absolute;
+    background: #284184;
+}
+.hosting .server .card-info{
+    padding: 20px 0;
+    position: relative;
+    box-shadow: 2px 2px 3px #ccc, -2px -2px 10px #ccc;
+}
+.hosting .server .card-info .icon{
+	background-color: #fff;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    position: relative;
+    border-radius: 50%;
+    margin: 6px 0px 20px;
+    display: inline-block;
+    border: 1.2px solid #284184;
+    box-shadow: 1px 1px 3px #284184, -1px -1px 3px #284184
+}
+.hosting .server .card-info img{
+    top: 10px;
+    left: 10px;
+	width: 40px;
+    height: 40px;
+    position: absolute;
+}
+.hosting .server .card-info h1{
+    color: #fff;
+    padding: 10px;
+    font-size: 23px;
+	background: #284184;
+    font-family: 'Changa';
+}
+.hosting .server .card-info .price{
+    color: #000;
+    padding: 5px;
+    font-size: 25px;
+    position: relative;
+    margin: 5px 0 10px;
+	border: 1.2px solid #284184;
+}
+.hosting .server .card-info .price:before{
+    left: -1px;
+	content: "";
+    width: 20px;
+    height: 20px;
+    bottom: -1px;
+    position: absolute;
+    background-color: #284184;
+}
+.hosting .server .card-info .price:after{
+    top: -1px;
+	content: "";
+    width: 20px;
+    right: -1px;
+    height: 20px;
+    position: absolute;
+    background-color: #284184;
+}
+.hosting .server .card-info ul{
+	margin: 25px 0;
+}
+.hosting .server .card-info li{
+	margin: 10px 0;
+    display: block;
+	list-style-type: none;
+}
+.hosting .server .card-info #right{
+	color: #000;
+    font-weight: 500;
+    padding: 3px 15px;
+    border: 1.2px solid #284184;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.hosting .server .card-info #left{
+    color: #fff;
+    font-weight: 500;
+    padding: 3px 15px;
+    margin-right: 5px;
+	background: #284184;
+    border: 1.2px solid #284184;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.hosting .server .card-info button{
+    color: #284184;
+    font-size: 20px;
+	background: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-family: 'Changa';
+    border: 1.2px solid #284184;
+    transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.hosting .server .card-info button:hover,
+.hosting .server .card-info button:focus{
+	color: #FFF;
+    outline: none;
+	cursor: pointer;
+	background: #284184;
+	transform: scale(1.122);
+}
+
+/*End Hosting Style*/
+
+
+/*Start Style Testimonials*/
+.testimonials{
+    z-index: 0;
+    height: auto;
+	position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-position: center center;
+	background-image: url(../img/Bgtest.jpg);
+}
+.testimonials:after{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    background-color: rgb(0,0,0,.7);
+}
+.testimonials .owl-carousel{
+    text-align: center
+}
+.testimonials .owl-carousel .content-head{
+    padding: 50px 0;
+}
+.testimonials .owl-carousel .content-head img{
+    padding: 3px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    width: 100px!important;
+    display: inline!important;
+}
+.testimonials .owl-carousel .content-head h3{
+    color: #fff;
+    margin: 0 auto;
+    font-family: "Changa";
+}
+.testimonials .owl-carousel .content-head span{
+    color: #fff;
+    margin: 5px 0;
+    font-size: 19px;
+    display: inline-block;
+    font-family: 'Anaheim';
+}
+.testimonials .owl-carousel .content-head p{
+    width: 70%;
+    color: #fff;
+    margin: 0 auto;
+    font-weight: 500;
+}
+.testimonials .owl-carousel .owl-nav button.owl-next{
+    right: 0;
+    top: 150px;
+    position: absolute;
+    color: #fff!important;
+    font-size: 70px!important;
+}
+.testimonials .owl-carousel .owl-nav button.owl-prev{
+    left: 0;
+    top: 150px;
+    position: absolute;
+    color: #fff!important;
+    font-size: 70px!important;
+}
+@media (max-width: 575.9px){
+    .testimonials .owl-carousel .owl-nav button.owl-next{
+        right: 25px;
+    }
+    .testimonials .owl-carousel .owl-nav button.owl-prev{
+        left: 25px;
+    }
+}
+.testimonials .owl-carousel .owl-nav button.owl-prev:focus,
+.testimonials .owl-carousel .owl-nav button.owl-next:focus{
+    outline: 0;
+}
+.testimonials .owl-carousel button.owl-dot{
+    width: 15px;
+    height: 15px;
+    opacity: 0.9;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.testimonials .owl-carousel .owl-dots{
+    display: none;
+}
+.testimonials .owl-carousel button.owl-dot:nth-last-of-type(2){
+    margin: 0 20px;
+}
+/*Start Style Contact*/
+.contact{
+	padding: 30px 0;
+	overflow: hidden;
+	position: relative;
+	background-color: #fff;
+}
+.contact .get-in-touch input{
+    border: 0;
+    color: #000;
+	width: 450px;
+    height: 40px;
+    display: block;
+    padding: 0 10px;
+    font-size: 15px;
+    margin-bottom: 20px;    
+    border-bottom: 1.1px solid #353541;
+}
+.contact .get-in-touch input:focus{
+	outline: 0;
+	border-color: #00adb5;
+    transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.contact .get-in-touch input::placeholder{
+    font-family: 'Anaheim'
+}
+.contact .get-in-touch textarea{
+    color: #000;
+	width: 450px;
+    height: 150px;
+    font-size: 15px;
+	max-width: 450px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 1.1px solid #353541;
+}
+.contact .get-in-touch textarea:focus{
+	outline: 0;
+    border-color: #00adb5;
+    transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.contact .get-in-touch input[type="submit"]{
+    width: auto;
+    display: block;
+	color: #393E46;
+    font-size: 16px;
+    background: #fff;
+    border: 1px solid;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-family: 'Anaheim';
+    transition: all .7s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    font-family: 'Changa', sans-serif , Arial;
+}
+.contact .get-in-touch input[type="submit"]:hover{
+	color: #fff;
+	cursor: pointer;
+	border-color: #00adb5;
+	background-color: #00adb5;
+
+}
+@media (max-width:991.9px){
+    .contact .get-in-touch input,
+    .contact .get-in-touch textarea{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width:768px){
+    .contact .get-in-touch input[type="submit"]{
+        width: 35%;
+        margin: 0 auto 50px;
+    }
+}
+@media (max-width:768px){
+    .contact .details{
+	   text-align: center;
+    }
+}
+.contact .details .get-in{
+    margin-top: 20px;
+}
+.contact .details .content p , .contact .details .content h3{
+    font-family: 'Anaheim';
+}
+.contact .details p{
+    font-size: 18px;
+}
+/*End Style Contact*/
+/*End Style Index Page*/
+
+
+
+/*Start Common in About Us - Terms of services*/
+.about-header h2 , .terms-header h2 , .privacy-header h2 , .faq-header h2 , .services-header h2, .blog-header h2 , .team-header h2 , .contact-header h2{
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 75px;
+    text-align: center;
+    position: absolute;
+    font-family: 'Anaheim';
+    transform: translate(-50%, -50%);
+}
+.content-about .ceo-cto, .content-about .missions , .content-about .vision , .content-terms , .content-privacy, .content-faq , .content-blogs , .content-post , .team-header, .common-content, .contact-us{
+    padding: 30px 0;
+}
+.content-about .missions p , .content-about .vision p , .content-terms p , .content-privacy p ,.content-post p , .support .phones .content p{
+    font-family: 'Anaheim';
+}
+.content-about .missions ul , .content-about .vision ul , .content-terms ul , .content-privacy ul{
+    list-style-type: decimal;
+    margin: 10px 0px 10px 50px;
+}
+.content-about .missions ul li , .content-about .vision ul li , .content-terms ul li , .content-privacy ul li{
+    font-weight: 500;
+    font-family: 'Raleway';
+}
+/*End Common in About Us - Terms of services*/
+
+
+
+/*Start About Us Page*/
+.about-header{
+    background-image: url(../img/aboutus.jpg);
+}
+.about-header .dropDown{
+    position: relative;
+}
+.content-about{
+    padding: 30px 0;
+}
+.content-about .title{
+    text-align: left;
+}
+.content-about .title h2 , .content-terms h3 ,.content-privacy h3{
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid;
+    text-transform: capitalize;
+}
+.content-about .info p{
+    line-height: 2;
+    font-size: 17.5px;
+    font-family: 'Anaheim';
+}
+.content-about .gallery .photo{
+    height: auto;
+    margin-bottom: 30px;
+}
+.content-about .gallery .photo img {
+    width: 100%;
+}
+/*End About Us Page*/
+
+
+
+/*Start contact us Page*/
+.contact-header{
+    background-image: url(../img/contactus.jpg);
+}
+.contact-us .get-in{
+    margin-top: 20px;
+}
+.contact-us .get-in .lo-em-ph{
+    display: block;
+    margin-bottom: 30px;
+}
+.contact-us .get-in .lo-em-ph:last-of-type{
+    margin-bottom: 0;
+}
+/*End contact Us Page*/
+
+
+
+/*Start Terms Page*/
+.terms-header{
+    background-image: url(../img/terms.jpg)
+}
+/*End Terms Page*/
+
+
+
+/*Start privacy Page*/
+.privacy-header{
+    background-image: url(../img/privacy.jpg)
+}
+/*End privacy Page*/
+
+
+/*Start FAQ Page*/
+.faq-header{
+    background-image: url(../img/faq.jpg)
+}
+.content-faq .think{
+    text-align: center;
+}
+.content-faq .faq{
+    position: relative;
+    margin: 0  auto 15px
+}
+.content-faq .faq h3{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 0;
+    position: relative;
+    padding: 15px 10px;
+    background-color: #284184;
+}
+.content-faq .faq h3 i{
+    top: 20px;
+    color: #fff;
+    right: 20px;
+    content: "\f067";
+    position: absolute;
+}
+.content-faq .faq i{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.content-faq .faq p{
+    display: none;
+    padding: 15px;
+    font-family: 'Anaheim';
+    box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
+}
+/*End FAQ Page*/
+
+
+
+/*Start style Services*/
+.services-header{
+    background-image: url(../img/services.jpg);
+}
+.services {
+	padding: 30px 0;
+	position: relative;
+}
+.services .serv{
+	text-align: center;
+}
+
+.services .serv:nth-of-type(n+1){
+	margin-bottom: 20px;
+}
+.services .serv .icon{
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+	background-color: #fff;
+    box-shadow: 2px 2px 3px #ccc, -2px -2px 10px #ccc;
+}
+.services .serv .icon img{
+    top: 15px;
+    left: 15px;
+	width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.services .serv .content{
+    padding: 10px;
+	margin-top: -45px;
+	border: 0px solid #fff;
+    box-shadow: 2px 2px 10px #ccc, -2px -2px 10px #ccc;
+}
+.services .serv .content:hover{
+    transition: all .7s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+	box-shadow: 0px 0px 5px #ccc, 0px 0px 5px #ccc;
+}
+.services .serv .content h2{
+	color: #0E2431;
+	font-size: 21px;
+	margin-top: 45px;
+	position: relative;
+    font-family: 'Anaheim';
+}
+.services .serv .content h2:before{
+    left: 0px;
+	content: "";
+    width: 50px;
+    height: 2px;
+    bottom: 15px;
+    position: absolute;
+    background-color: #284184;
+}
+.services .serv .content h2:after{
+    right: 0px;
+	content: "";
+    width: 50px;
+    height: 2px;
+    bottom: 15px;
+    position: absolute;
+    background-color: #284184;
+}
+.services .serv .content p{
+	color: #0E2431;
+	font-size: 14px;
+    font-weight: 500;
+}
+/*End Service style page*/
+
+
+
+/*Start common-services page*/
+.common-content .photo{
+    text-align: center
+}
+.common-content .photo img{
+    width: 100%;
+    margin-bottom: 80px;
+}
+.common-content .infoo h3 , .common-content .technologies h3 , .common-content .product , .phone-emails h3 , .phones h3{
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border-left: 5px solid;
+}
+.common-content .infoo p{
+    font-size: 18px;
+    font-family: 'Anaheim';
+}
+.common-content .technologies h3{
+    margin: 30px 0;
+}
+.common-content .technologies .tech{
+    display: inline-block;
+}
+.common-content .product{
+    margin: 30px 0;
+}
+.common-content .project{
+	height: 360px;
+    text-align: center;
+    position: relative;
+}
+@media (max-width:2000px){
+    .common-content .project:nth-of-type(n+1){
+	   margin-bottom: 3%;
+    }
+}
+.common-content .project .head{
+    height: 225px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px #ccc, -2px -2px 5px #ccc;
+}
+.common-content .project img{
+    width: 100%;
+    height: 225px;
+    transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.common-content .project img:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.common-content .project .info{
+    height: 130px;
+    padding-top: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #ccc, -2px -2px 5px #ccc;
+}
+.common-content .project .info h4{
+	color: #0E2431;
+    font-size: 23px;
+    position: relative;
+    font-family: 'Changa';
+}
+.common-content .project .info span{
+	color: #284184;
+    font-family: 'Changa';
+}
+.common-content .project .info h4:before{
+    left: 0px;
+	content: "";
+    width: 50px;
+    height: 3px;
+    bottom: 15px;
+    position: absolute;
+    background-color: #284184;
+}
+.common-content .project .info h4:after{
+    right: 0px;
+	content: "";
+    width: 50px;
+    height: 3px;
+    bottom: 15px;
+    position: absolute;
+    background-color: #284184;
+}
+.common-content .project .info p{
+    font-size: 14px;
+    padding: 0 18px;
+    font-weight: 500;
+    overflow: hidden;
+	line-height: 25px;
+    text-align: center;
+}
+/*End common-services page*/
+
+
+
+/*Start support Page*/
+.support{
+    padding-bottom: 0;
+}
+.support .contact, .support .phones{
+    padding: 30px 15px 0;
+}
+.support .phone-emails h3{
+    margin-bottom: 20px;
+}
+.support .phones .content{
+    margin-bottom: 20px;
+}
+.support .phones .content p{
+    font-size: 18px;
+    margin-left: 10px;
+}
+/*End support Page*/
+
+
+
+/*Start Style Security page*/
+.security{
+	padding: 30px 0;
+	position: relative;
+}
+.security .sec{
+	height: auto;
+	text-align: center;
+    margin-bottom: 30px;
+}
+.security .sec .cardInfo{
+    padding-bottom: 15px;
+    box-shadow: 2px 2px 3px #ccc, -2px -2px 10px #ccc;
+}
+.security .sec header{
+    padding: 20px 10px;
+	background-color: #284184;
+}
+.security .sec header h2{
+	color: #fff;
+	font-size: 17px;
+	position: relative;
+
+}
+.security .sec header h2:before{
+	content: "";
+    width: 25px;
+    height: 3px;
+    bottom: 10px;
+    right: -10px;
+    position: absolute;
+    background-color: #fff;
+}
+.security .sec header h2:after{
+	content: "";
+    width: 25px;
+    height: 3px;
+    left: -10px;
+    bottom: 10px;
+    position: absolute;
+    background-color: #fff;
+}
+.security .sec .icon{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: inline-block;
+	background-color: #fff;
+}
+.security .sec .icon img{
+    top: 10px;
+    left: 10px;
+	width: 40px;
+    height: 40px;
+    position: absolute;
+}
+.security .sec p{
+	padding: 10px;
+    line-height: 2;
+    overflow: hidden;
+    font-family: 'Changa';
+}
+.security .sec h4{
+    color: #fff;
+    padding: 5px;
+    font-size: 25px;
+    position: relative;
+    margin: 5px 0 10px;
+	border: 1.2px solid #284184;
+    background-color: #284184;
+}
+.security .sec button{
+    color: #284184;
+    font-size: 20px;
+	background: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-family: 'Changa';
+    border: 1.2px solid #284184;
+    transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.security .sec button:hover{
+	color: #fff;
+	cursor: pointer;
+	transform: scale(1.122);
+	background-color: #284184;
+}
+/*End Security Style*/
+
+
+
+/*Start Blogs & post Style page*/
+.blog-header{
+    background-image: url(../img/blogs.jpg)
+}
+.content-post h2{
+    font-size: 35px;
+}
+.content-post img{
+    width: 100%;
+    height: 75%;
+    margin: 20px 0 50px;
+}
+.content-post p{
+    font-size: 20px;
+}
+.content-post .writer{
+    margin-top: 30px;
+}
+.content-post .writer p{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid;
+    
+}
+.content-post .writer span{
+    font-size: 22px;
+    display: block;
+    margin-left: 20px;
+    display: inline-block;
+    font-family: "Anaheim";
+}
+.content-post .share{
+    z-index: 10;
+    bottom: 280px;
+    left: 10px;
+    position: fixed;
+    margin-left: 10px;
+}
+.content-post .share ul{
+    list-style-type: none;
+}
+.content-post .share ul li{
+    margin-bottom: 10px
+}
+.content-post .share ul li a img{
+    width: 35px!important;
+    height: 35px!important;
+    margin: 0!important;
+}
+.content-post .writer span:first-of-type{
+    padding-left: 10px;
+    border-left: 5px solid;
+}
+.content-post .writer .job{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.other-blogs .owl-nav{
+    text-align: center;
+    display: block!important;
+}
+.other-blogs .owl-nav button{
+    margin: 0 15px;
+}
+.other-blogs .owl-nav button:focus{
+    outline: 0;
+}
+.other-blogs .owl-nav span{
+    font-size: 30px;
+}
+/*End Blogs & post Style page*/
+
+
+/*start style team page*/
+.team-header{
+    background-image: url(../img/team.jpg);
+}
+.team{
+	position: relative;
+	padding: 90px 0 30px;
+}
+.team h3{
+	position: relative;
+}
+
+.team .member{
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.team .member header img{
+    width: 180px;
+    padding: 3px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
+}
+.team .member .bg-details{
+    height: auto;
+	margin: -100px 0 0;    
+    transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
+}
+.team .member h2{
+    font-size: 25px;
+    position: relative;
+    padding: 100px 10px 0;
+    font-family: 'Anaheim';
+}
+.team .member h2:before{
+    right: 0;
+	content: "";
+    width: 50px;
+    height: 2px;
+    bottom: 14px;
+    position: absolute;
+    background-color: #284184;
+}
+.team .member h2:after{
+    left: 0;
+	content: "";
+    width: 50px;
+    height: 2px;
+    bottom: 14px;
+    position: absolute;
+    background-color: #284184;
+}
+.team .member h4{
+    font-weight: 100;
+	position: relative;
+	margin-bottom: 15px;
+    font-family: 'Anaheim';
+}
+.team .member h4:after{
+    left: 43%;
+	content: "";
+    width: 50px;
+    height: 2px;
+    bottom: -5px;
+    position: absolute;
+    background-color: #284184;
+}
+@media (max-width:767.9px){
+    .team .member h4:after{
+        left: 45%;
+    }
+}
+.team .member i{
+    width: 40px;
+    padding: 8px;
+    font-size: 22px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+
+}
+.team .member i:first-of-type{
+	margin-right: 0;
+}
+.team .member i:hover{
+	color: #fff;
+	cursor: pointer;
+	background-color: #284184;
+}
+.team .member p:first-of-type{
+    margin: 0 10px;
+    font-size: 17px;
+    font-family: 'Anaheim';
+}
+.team .member p:last-of-type{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+	background-color: #284184;
+    font-family: 'Anaheim';
+}
+/*End Team Style page*/
+
+
+
+/*Start Style Footer*/
+.footer{
+    color: #fff;
+	padding: 30px 0 0;
+	position: relative;
+    background-color: #00adb5;
+}
+.footer h2{
+    color: #0E2431;;
+    font-size: 25px;
+    padding-left: 10px;
+    display: inline-block;
+    border-left: 5px solid;
+}
+
+.footer ul{
+    margin: 20px 0 0;
+    list-style-type: none;
+}
+.footer ul li{
+    display: block;
+    margin-bottom: 10px;
+}
+.footer ul li a{
+    color: #fff;
+    font-size: 17.5px;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Anaheim';
+}
+.footer ul li a:before{
+    width: 0%;
+    content: "";
+    bottom: -5px;
+    height: 2.5px;
+    position: absolute;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+}
+.footer ul li a:hover::before{
+    width: 100%;
+}
+.footer .company ul li:last-of-type{
+    margin-bottom: 20px;
+}
+.footer .company img{
+    width: 135px;
+}
+.footer .company img:first-of-type{
+    margin-right: 8px;
+}
+.footer .socialmedia a i{
+    margin-right: 10px
+}
+
+.footer .get-in .lo-em-ph .contant h3{
+	width: auto;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.footer .get-in .lo-em-ph .contant p{
+	width: auto;
+    color: #fff;
+    font-size: 16px;
+}
+@media (max-width:992px){
+    .footer .company, .footer .socialmedia {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:575.9px){
+    .col-xs-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+.footer > p:last-of-type{
+    width: 100%;
+    color: #000;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Anaheim';
+    background-color: #FFF;
+}
+/*End style footer*/
+
+/*Start Style scroll to top*/
+.scrollToTop{
+    z-index: 20;
+    right: 20px;
+    color: #fff;
+    bottom: 10px;
+    padding: 10px;
+    display: none;
+    position: fixed;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #284184;
+}.scrollToTop:hover{
+    color: #fff;
+}
+.scrollToTop i{
+    font-size: 30px;
+}
+/*End Style scroll to top*/
